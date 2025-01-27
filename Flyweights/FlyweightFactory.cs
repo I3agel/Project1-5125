@@ -1,10 +1,36 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Assi1.Flyweights
 {
-    internal class FlyweightFactory
+    public class FlyWeightFactory
     {
+        public FlyWeightFactory() 
+        {
+        
+        }
+
+
+        public void GetFlyweight(string type)
+        {
+            switch (type)
+            {
+                case ("bottomWeight"):
+                    
+                break;
+
+                case ("pyramid"):
+
+                    break;
+
+                case ("topple"):
+
+                    break;
+
+                default:
+                    throw new ArgumentOutOfRangeException("Invalid Strategy Type");
+            }
+        }
     }
 }
